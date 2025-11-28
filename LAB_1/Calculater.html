@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1 = parseInt(prompt("Enter number 1"));
+        let n2 = parseInt(prompt("Enter number 2"));
+        let opretaion = prompt("enter oparatore");
+
+        if(opretaion == '+'){
+            alert("ans = "+(n1+n2));
+        }
+        else if(opretaion == '-')
+        {
+            alert("ans = "+(n1-n2));
+        }
+        else if(opretaion == '*')
+        {
+            alert("ans = "+(n1*n2));
+        }
+        else if(opretaion == '/')
+        {
+            if(n2 == 0)
+            { 
+                alert("number 2 is 0 is not valid");
+            }
+            else{
+                alert("ans = "+(n1/n2));
+            }
+        }
+    </script>
+</body>
+</html>

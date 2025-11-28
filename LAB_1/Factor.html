@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="number">Enter number</label>
+    <input type="text" name="number" id="number">
+    <input type="button" onclick="factor()" value="CLICK">
+    <ul id="list"></ul>
+    <script>
+        function factor(){
+            let n = parseInt(document.getElementById("number").value);
+            let list = document.getElementById("list");
+            for(i=1; i<=n; i++){
+                if (n % i === 0) {
+                    const li = document.createElement('li');
+                    li.textContent = i;
+                    list.appendChild(li);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

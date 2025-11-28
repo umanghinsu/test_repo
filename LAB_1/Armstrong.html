@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("enter numbr = "));
+        let temp = n;
+        let ans = 0;
+            length = Math.floor(Math.log10(Math.abs(n))) + 1;
+        
+            for(i=0; i<length; i++)
+            {
+                rim = temp%10;
+                ans += Math.pow(rim,length);
+                temp = Math.floor(temp/10);
+            }
+            
+            if(ans == n)
+            {
+                document.write(n+" is armstrong"); 
+            }
+            else{
+                document.write(n+" is not armstrong"); 
+            }
+    </script>
+</body>
+</html>

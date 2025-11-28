@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Enter a number to generate Fibonacci series up to that number"));
+        let a = 0, b = 1, nextTerm;
+
+        let fibonacciSeries = "Fibonacci Series: " + a + ", " + b;
+
+        nextTerm = a + b;
+
+        while (nextTerm <= n) {
+            fibonacciSeries += ", " + nextTerm;
+            a = b;
+            b = nextTerm;
+            nextTerm = a + b;
+        }
+
+        alert(fibonacciSeries);
+    </script>
+</body>
+</html>
