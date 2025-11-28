@@ -1,0 +1,77 @@
+<!-- Write JavaScript that handles following mouse event. (B)
+If mouse left button pressed on browser, it displayed message “Left Clicked”.
+If mouse right button pressed on browser, it displayed message “Right Clicked”.  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="output"></div>
+    <button onmousedown="check(event)">click</button>
+    <script>
+        // 1. Demonstrate callbacks in JavaScript
+        // function hello() {
+        //     document.write("hello");
+        // }
+        // function add(a, b, display) {
+        //     let sum = a + b;
+        //     document.write(sum);
+        //     display(sum);
+        // }
+        // add(4, 6, hello);
+
+        // 2. difference between let and var
+        // {
+        //     let a = 10; 
+        // }
+        // var b = 20;
+        // function something() {
+        //     document.writeln("something a is " + a);
+        //     document.writeln("")
+        // }
+        // something();
+        // function something2() {
+        //     document.writeln("something2 b is " + b);
+        // }
+        // something2();
+
+        // 3. Demonstrate default parameter
+        // function printName(name="hi"){
+        //     document.writeln(name);
+        // }
+        // printName("something")
+
+        // // 4. Demonstrate the spread operator.
+        // let arr1 = [1, 4, 6]
+        // console.log(arr[0], arr[1], arr[2]);
+        // console.log(...arr)
+
+        // 5. Demonstrate the ‘for of’ loop.
+        // let arr2 = [1, 2, 3, 4, 5]
+        // for (const element of arr) {
+        //     console.log(value)
+        // }
+
+        // 7. Demonstrate the Arrow functions.
+        // add = (a, b) => a + b;
+        // sum = add(5,6)
+        // document.writeln("sum is " + sum); 
+        
+        // 10. If mouse left button pressed on browser, it displayed message “Left Clicked”. If mouse right button pressed on browser, it displayed message “Right Clicked”.
+        // function check(e){
+        //     if(e.button === 0){
+        //         document.write("left click")
+        //     }
+        //     else if(e.button === 2){
+        //         document.write("right click")
+        //     }
+        // }
+    </script>
+</body>
+
+</html>

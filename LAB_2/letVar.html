@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+    <button onmousedown="check(event)">click</button>
+    <script>
+        // 2. difference between let and var
+        {
+            let a = 10; 
+        }
+        var b = 20;
+        function something() {
+            document.writeln("something a is " + a);
+            document.writeln("")
+        }
+        something();
+        function something2() {
+            document.writeln("something2 b is " + b);
+        }
+        something2();
+    </script>
+</body>
+</html>

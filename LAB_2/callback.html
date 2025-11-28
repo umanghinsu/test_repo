@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+    <button onmousedown="check(event)">click</button>
+    <script>
+        // 1. Demonstrate callbacks in JavaScript
+        function hello() {
+            document.write("hello");
+        }
+        function add(a, b, display) {
+            let sum = a + b;
+            document.write(sum);
+            display(sum);
+        }
+        add(4, 6, hello);
+    </script>
+</body>
+</html>
